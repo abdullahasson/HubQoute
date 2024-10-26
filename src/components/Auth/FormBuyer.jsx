@@ -116,7 +116,7 @@ const FormBuyer = () => {
                             لديك حساب بالفعل ؟
                             {" "}
 
-                            <Link to="/sign-in">
+                            <Link to="/HubQoute/sign-in">
                                 تسجيل الدخول 
                             </Link>
                         </p>

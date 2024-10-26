@@ -79,7 +79,7 @@ const Theme = () => {
 
                     <ListItemButton
                         sx={{ py: 0, minHeight: 32}}
-                        onClick={() => handleTheme('dark')}
+                        // onClick={() => handleTheme('dark')}
                     >
                         <ListItemIcon>
                             <FontAwesomeIcon icon={faMoon} />
@@ -92,7 +92,7 @@ const Theme = () => {
 
                     <ListItemButton
                         sx={{ py: 0, minHeight: 32}}
-                        onClick={() => handleTheme('system')}
+                        // onClick={() => handleTheme('system')}
                     >
                         <ListItemIcon>
                             <FontAwesomeIcon icon={faDotCircle} />
@@ -105,7 +105,7 @@ const Theme = () => {
 
                     <ListItemButton
                         sx={{ py: 0, minHeight: 32}}
-                        onClick={() => handleTheme('light')}
+                        // onClick={() => handleTheme('light')}
                     >
                         <ListItemIcon>
                             <FontAwesomeIcon icon={faSun} />

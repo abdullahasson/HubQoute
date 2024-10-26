@@ -20,47 +20,47 @@ import Login from "../pages/Auth/Login";
 export const router = createBrowserRouter([
     // Register routes
     {
-      path: "/",
+      path: "/HubQoute/",
       element: <Home />,
     },
     {
-      path: "/sign-up",
+      path: "/HubQoute/sign-up",
       element: <SignupType />,
     },
     {
-      path: "/sign-up/admin",
+      path: "/HubQoute/sign-up/admin",
       element: <SignupAdmin />,
     },
     {
-      path: "/sign-up/seller",
+      path: "/HubQoute/sign-up/seller",
       element: <SignupSeller />,
     },
     {
-      path: "/sign-up/buyer",
+      path: "/HubQoute/sign-up/buyer",
       element: <SignupBuyer />,
     },
     {
-      path: "/sign-in",
+      path: "/HubQoute/sign-in",
       element: <Login />,
     },
 
     // Buyer routes 
     {
-      path: "/dashboard/buyer",
+      path: "/HubQoute/dashboard/buyer",
       element: <Buyer />,
       children: buyerRoutes
     },
 
     // Seller routes 
     {
-      path: "/dashboard/seller",
+      path: "/HubQoute/dashboard/seller",
       element: <Seller />,
       children: sellerRoutes
     },
 
     // Admin routes 
     {
-      path: "/dashboard/admin",
+      path: "/HubQoute/dashboard/admin",
       element: <Admin />,
       children: adminRoutes
     },

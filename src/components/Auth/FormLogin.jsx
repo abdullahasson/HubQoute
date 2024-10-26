@@ -81,7 +81,7 @@ const Form = () => {
                             ليس لديك حساب ؟
                             {" "}
 
-                            <Link to="/sign-up">
+                            <Link to="/HubQoute/sign-up">
                             إنشاء حساب جديد
                             </Link>
                         </p>
