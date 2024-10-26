@@ -1,0 +1,89 @@
+.summary {
+    direction: ltr;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 8px;
+    border: 1px solid #DDD;
+    background: var(--primary-card-background-color);
+    box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.25);
+    width: 275px;
+}
+
+.summary .heading  p {
+    padding: 12px;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.summary .total {
+    padding: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+}
+
+.summary .total > div {
+    padding: 7px;
+    width: calc(100% / 2 - 8px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+    border-radius: 10px;
+    color: #546881;
+    transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+.summary .total > div.active ,
+.summary .total > div:hover {
+    background: rgba(33, 64, 201, 0.10);
+    color: #2140C9;
+
+    & span {
+        color: #2140C9;
+    }
+}
+
+.summary .total > div p {
+    font-family: 'Cairo';
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.summary .total > div span {
+    color: #000;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.summary .tags {
+    padding: 15px;
+    padding-top: 0;
+}
+
+.summary .tags p {
+    margin-bottom: 10px;
+}
+
+.summary .tags > div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+}
+
+.summary .tags > div span {
+    display: flex;
+    padding: 3px 14px 4px 14px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    background: rgba(33, 64, 201, 0.10);
+    color: #2140C9;
+    font-size: 14px;
+    font-weight: 600;
+}

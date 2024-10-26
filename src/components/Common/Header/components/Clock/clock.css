@@ -1,0 +1,19 @@
+.history {
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+    font-size: 16px;
+    color: var(--fourth-text-color);
+}
+
+.history .now {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    gap: 8px;
+}
+
+.history .now > span {
+    direction: rtl;
+}

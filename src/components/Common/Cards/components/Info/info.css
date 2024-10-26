@@ -1,0 +1,35 @@
+.quotations-qantity {
+    width: 100%;
+    display: flex; 
+    flex-direction: column;
+}
+
+.quotations-qantity div {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.quotations-qantity div p {
+    margin: 0;
+    font-size: 15px;
+    color: var(--Vlll-text-color) !important;
+    font-weight: 400;
+}
+
+.quotations-qantity div span {
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--Vlll-text-color) !important;
+}
+
+.quotations-qantity div span.price-tag {
+    color: #2140C9;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 29.98px;
+    letter-spacing: -0.16500000655651093px;
+}

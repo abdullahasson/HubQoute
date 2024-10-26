@@ -1,0 +1,73 @@
+.instrucrion-paper {
+    width: 100% ;
+    color: var(--primary-heading-color) ;
+    direction: rtl ; 
+    padding: 12px 25px; 
+    box-sizing: border-box;
+    font-size: 17px;
+    font-family: 600;
+}
+    
+.instrucrion-paper > * {    
+    font-family: 'Cairo' !important;
+    direction: rtl;
+    margin: 0;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.instrucrion-paper p {
+    color: var(--primary-heading-color);
+    text-align: right;
+    font-family: Cairo;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 190%; 
+}
+
+.instrucrion-paper h3 {
+    /* font-size: 20px;
+    font-weight: 800;
+    margin-bottom: 14px; */
+    color: var(--primary-heading-color);
+    font-family: Cairo;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 190%;
+    margin-bottom: 0;
+}
+
+.instrucrion-paper ul {
+    margin: 0;
+    padding: 0;
+}
+
+.instrucrion-paper ul p {
+    margin: 0;
+}
+
+.instrucrion-paper ul li  {
+    color: var(--primary-heading-color);
+    text-align: right;
+    font-family: Cairo;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 190%; 
+}
+
+.instrucrion-paper ul li span {
+    font-size: 15px;
+    margin-left: 15px;
+}
+
+.instrucrion-paper ul li ul {
+    margin-right: 45px;
+}
+
+.instrucrion-paper ul li ul li {
+    direction: rtl;
+    padding: 0;
+}

@@ -1,0 +1,14 @@
+@keyframes moveShadow {
+    0% {
+        box-shadow: 0 0 20px 17px #33C9FF40; 
+    }
+
+    50% {
+        box-shadow: 0 0 8px 5px #33C9FF40; 
+    }
+
+    100% {
+        box-shadow: 0 0 20px 17px #33C9FF40; 
+    }
+
+}

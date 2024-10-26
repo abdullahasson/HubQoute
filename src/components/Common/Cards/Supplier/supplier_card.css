@@ -1,0 +1,5 @@
+.supplier-card {
+    padding: var(--card-padding);
+    background-color: var(--primary-card-background-color);
+    box-sizing: border-box;
+}

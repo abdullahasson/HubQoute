@@ -1,0 +1,30 @@
+.support {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    padding: 0 5px 12px;
+    right: 18.4%;
+    bottom: 0;
+    width: 30%;
+    height: 84%;
+    direction: rtl;
+    border-radius: 6px;
+    background: var(--primary-support-background-color);
+    z-index: 99;
+    /* display: none; */
+}
+
+.support * {
+    font-family: 'Cairo' !important;
+}
+
+.support .chat-box-head {
+    width: 100%;
+    padding: 18px 10px 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #d6d4d4;
+}

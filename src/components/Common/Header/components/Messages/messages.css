@@ -1,0 +1,129 @@
+.MuiBadge-badge {
+    background-color: #2140C9;
+}
+
+.notif-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 38px;
+    height: 38px;
+    background: #EFF2FF;
+    color: #2140C9;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+.notif-btn.active ,
+.notif-btn:hover {
+    background-color: #2140C9;
+    color: white;
+}
+
+.css-3dzjca-MuiPaper-root-MuiPopover-paper-MuiMenu-paper {
+    background-color: #EBEEF2 !important;
+    border-radius: 8px !important;
+}
+
+.css-6hp17o-MuiList-root-MuiMenu-list {
+    padding-bottom: 0 !important;
+    padding-top: 0 !important;
+}
+
+.messages * {
+    font-family: 'Cairo' !important;
+}
+
+.messages-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    width: 400px;
+    padding: 8px !important;
+    border-radius: 10px;
+    box-sizing: border-box;
+    direction: rtl;
+    background: #EBEEF2;
+}
+
+.messages-list .messages-container {
+    width: 100%;
+    max-height: 272px;
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.messages-list .messages-container .css-1e9lk82-MuiListItemAvatar-root {
+    display: flex;
+}
+
+.messages-list .messages-container::-webkit-scrollbar {
+    width: 0px;
+}
+
+.show-all-messages {
+    width: 100%;
+    padding: 8px 0 10px;
+    background: inherit;
+    color: #2140C9;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 21px;
+    text-align: center;
+    box-sizing: border-box;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+/* list item for multi file */
+.messages-list .list-item {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 12px;
+    margin: 0;
+    box-sizing: border-box;
+    background-color: white;
+    border-radius: 4px;
+    font-family: 'cairo' !important;
+} 
+
+
+.messages-list .list-item .text-content {
+    text-align: start;
+    font-family: 'Cairo';
+    margin: 0;
+}
+
+.messages-list .list-item .text-content p {
+    font-family: Cairo;
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 19.5px;
+}
+
+.messages-list .list-item .text-content .name {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 21px;
+}   
+
+.messages-list .list-item .text-content .noti-time {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 18px;
+    color: #667085;
+}
+
+/* ######################### */

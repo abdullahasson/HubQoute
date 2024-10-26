@@ -1,0 +1,19 @@
+.register {
+    width: 100%;
+    height: 100vh;
+    color: var(--primary-text-color);
+    background-color: var(--primary-background-color);
+}
+
+.register .container {
+    height: 100%;
+}
+
+.register .container .content-register {
+    width: 85%;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}

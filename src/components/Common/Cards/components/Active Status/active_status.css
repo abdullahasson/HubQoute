@@ -1,0 +1,32 @@
+.state {
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    padding: 1px 6px;
+    border-radius: 6px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 29.98px;
+    letter-spacing: -0.165px;
+}
+
+.state span {
+    font-size: 8px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.state.active {
+    background: #EFFFECE5;
+    color: #42B72A;
+}
+
+.state.inactive {
+    background: #FFF1F1;
+    color: #EA1212;
+}

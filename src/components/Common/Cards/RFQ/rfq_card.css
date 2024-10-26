@@ -1,0 +1,160 @@
+.rfq-card {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: start;
+    gap: 0;
+    background-color: var(--primary-card-background-color);
+    padding: var(--card-padding);
+    padding-top: 0;
+    border-radius: var(--card-radius);
+}
+
+.rfq-card .rank {
+    width: 100%;
+    height: 50px;
+    padding-bottom: 4px;
+    position: relative;
+    box-sizing: content-box;
+}
+
+.rfq-card .rank > div {
+    position: absolute;
+    top: -100%;
+    right: 50%;
+    translate: 50% 0;
+}
+
+.rfq-card .rank > div > div {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 94px;
+    height: 94px;
+}
+
+.rfq-card .rank img {
+    border-radius: 100%;
+    width: 94px;
+    height: 94px;
+}
+
+.rfq-card .products {
+    width: 100%;
+    display: flex;
+    gap: 16px;
+    flex-direction: column;
+}
+
+.rfq-card .products .item {
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+.rfq-card .products .item .itemImage {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    padding: 0;
+}
+
+.rfq-card .products .item .itemImage p {
+    font-weight: 700;
+    font-size: 16px;
+    color:#2140C9;
+}
+
+.rfq-card .products .item .itemImage img {
+    width: 133px;
+    height: 100px;
+    border-radius: 10px;
+    margin-top: 6px;
+}
+
+/* horizontal */
+.rfq-horizontal-card .card {
+    width: 100%;
+    height: 112px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    border-radius: 16px;
+    padding: 12px;
+    background-color: white;
+}
+
+.rfq-horizontal-card .card .cardHeader {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.rfq-horizontal-card .card .cardHeader > img {
+    width: 68px;
+    height: 68px;
+    border-radius: 100%;
+    border: 1px solid #444; 
+}
+
+.rfq-horizontal-card .card .cardHeader > .card-header {
+    padding: 0;
+}
+
+.rfq-horizontal-card .card .cardHeader .product-image {
+    display: flex;
+    flex-direction: column;
+
+    & p {
+        font-family: Cairo;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 29.98px;
+        letter-spacing: -0.16500000655651093px;
+        text-align: left;        
+        color: #2140C9;
+    }
+
+    & img {
+        width: 82px;
+        height: 64px;
+        border-radius: 10px;
+        border: 1px solid #F0F0F0;
+    }
+}
+
+.rfq-horizontal-card .card .cardBody {
+    width: 74%;
+    padding: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* background-color: #444; */
+
+    & span {
+        font-family: Cairo;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 29.98px;
+        letter-spacing: -0.16500000655651093px;
+        text-align: left;
+        color:#2140C9;
+    }
+
+    & span.rr {
+        background: #57EE3833;
+        color: #00C624;
+        padding: 4px 10px;
+        border-radius: 8px;
+    }
+    
+}
+
+.rfq-horizontal-card #counter_offer_btn {
+    padding: 5px 74px;
+    margin-top: 14px;
+}

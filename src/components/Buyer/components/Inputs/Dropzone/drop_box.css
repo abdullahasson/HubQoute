@@ -1,0 +1,76 @@
+.drop-zone {
+  display: 100%;
+  display: flex;
+  flex-direction: column !important;
+  justify-content: space-between;
+  align-items: start !important;
+}
+
+.drop-box {
+  width: 100%;
+  display: flex;
+  flex-direction: column !important;
+  justify-content: space-between;
+  gap: 0 !important;
+  align-items: end !important;
+}
+
+.input_images {
+  max-width: 190px;
+  display: none;
+}
+
+.labelFile {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 22px;
+  height: 100px;
+  width: 50%;
+  border: 1px dashed #2F4CDD;
+  border-radius: 8px;
+  align-items: center;
+  text-align: center;
+  padding: 10px;
+  color: #404040;
+  cursor: pointer;
+  background-color: var(--primary-background-color);
+}
+
+.labelFile p {
+  direction: rtl;
+}
+
+/* images list */
+
+.drop-zone .images-drop {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+
+.drop-zone .images-drop ul {
+  max-width: 75%;
+  margin: 10px 0 18px;
+  padding: 0;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.drop-zone .images-drop ul li {
+  position: relative;
+  border: 1px solid var(--primary-button-background-color);
+  border-radius: 8px;
+  overflow: hidden;
+  width: 78px;
+  height: 78px;
+}
+
+.drop-zone .images-drop ul li img {
+  width: 100%;
+  height: 100%;
+}

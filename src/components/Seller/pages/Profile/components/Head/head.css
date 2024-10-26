@@ -1,0 +1,116 @@
+.profile .head {
+    position: relative;
+    height: 230px;
+    background: var(--primary-profile-background-color);
+}
+
+.profile .head .background-profile-image {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    height: 118px;
+    background: linear-gradient(90deg, #718BFB 0%, #0BB6B6 100%);
+
+    & * {
+        color: white !important;
+    }
+}
+
+.profile .head .background-profile-image .logo {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+}
+
+.profile .head .company {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    position: absolute;
+    left: 0;
+    top: 88px;
+    width: 100%;
+    height: 150px;
+    padding: 0 60px;
+}
+
+.profile .head .company .share-account {
+    position: absolute;
+    left: 0;
+    top: 30px;
+    font-size: 16px;
+}
+
+.profile .head .company .txt {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    gap: 22px;
+}
+
+.profile .head .company .txt .company-icon {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 150px;
+    border-radius: 100%;
+    overflow: hidden;
+}
+
+.profile .head .company .txt .company-icon::before   {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: 100%; 
+    padding: 3px; 
+    background: linear-gradient(to bottom , #2140C9  0% , #FFC94B 100%); 
+    -webkit-mask: 
+        linear-gradient(#fff 0 0) content-box, 
+        linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude; 
+}
+
+.profile .head .company .txt .company-icon img {
+    width: 140px;
+    height: 110px;
+}
+
+.profile .head .company .txt .company-info > div {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    gap: 6px;
+}
+
+.profile .head .company .txt .company-info .company-name {
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 41px;
+}
+
+.profile .head .company .txt .company-info .certified {
+    width: fit-content;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5px;
+    background-color: #42B72A; 
+    border-radius: 8px;
+    font-size: 12px;
+    padding: 6px;
+    color: #fff;
+    margin: 6px 0;
+}
+
+.profile .head .company .buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+}

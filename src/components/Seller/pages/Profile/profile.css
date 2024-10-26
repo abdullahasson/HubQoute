@@ -1,0 +1,96 @@
+.profile {
+    width: 100%;
+    min-height: 100vh;
+    box-sizing: border-box;
+    padding: var(--page-padding); 
+    direction: rtl;
+}
+
+.profile * {
+    box-sizing: border-box;
+    font-family: 'Cairo';
+    text-decoration: none;
+}
+
+.profile > div {
+    width: 100%;
+}
+
+.profile .location {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+
+.profile .location img {
+    border-radius: 6px;
+}
+
+.profile .location .country {
+    font-weight: 400;
+    font-weight: 16px;
+}
+
+.profile .tabs-control {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 40px;
+    padding: 46px 46px 0;
+    margin: 0;
+    background-color: var(--primary-profile-background-color);
+}
+
+.profile .tabs-control button {
+    font-family: Cairo;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    border-bottom: 1px solid #000;
+}
+
+.css-1h9z7r5-MuiButtonBase-root-MuiTab-root.Mui-selected {
+    color: #2140C9;
+}
+
+.profile .tabs-control .css-1aquho2-MuiTabs-indicator {
+    height: 4px;
+    background-color: #2140C9;
+}
+
+/* body */
+
+.profile #simple-tabpanel-0 {
+    padding: 12px;
+}
+
+.profile #simple-tabpanel-0 ,
+.profile #simple-tabpanel-1 {
+    background-color: var(--primary-profile-background-color);
+}
+
+.profile #simple-tabpanel-1 .css-1v3caum {
+    padding: 22px 12px 12px;
+}
+
+.profile .panel-layout {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px
+
+}
+
+.profile .panel-layout > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+.profile .panel-layout > div:last-child {
+    width: 100%;
+}

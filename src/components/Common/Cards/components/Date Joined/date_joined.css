@@ -1,0 +1,16 @@
+.date-joined {
+    width: 100%;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 33.73px;
+    letter-spacing: -0.16500000655651093px;    
+}
+
+.date-joined span {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 33.73px;
+    letter-spacing: -0.16500000655651093px;
+    text-align: right;
+    color: #546881
+}

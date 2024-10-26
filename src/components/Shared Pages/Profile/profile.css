@@ -1,0 +1,120 @@
+.profile {
+    width: 100%;
+    min-height: 100vh;
+    padding: var(--page-padding);
+    direction: rtl;
+}
+
+.profile * {
+    font-family: 'Cairo';
+    text-decoration: none;
+}
+
+.profile > div {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.profile .location {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+
+.profile .location img {
+    border-radius: 6px;
+}
+
+.profile .location .country {
+    font-weight: 400;
+    font-weight: 16px;
+}
+
+.profile .tabs-control {
+    padding: 0 46px;
+    margin: 0;
+}
+
+.profile .tabs-control button {
+    font-family: Cairo;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.css-1h9z7r5-MuiButtonBase-root-MuiTab-root.Mui-selected {
+    color: #2140C9;
+}
+
+.profile .tabs-control .css-1aquho2-MuiTabs-indicator {
+    height: 4px;
+    background-color: #2140C9;
+}
+
+/* body */
+
+
+.profile .body {
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    gap: 16px;
+    padding: 0 25px;
+}
+
+.profile .body > div {
+    width: 100%;
+    background-color: var(--primary-card-background-color);
+}
+
+.profile .body .account-details {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    border-radius: 16px;
+    padding: 18px 42px 18px 0 ;
+    direction: rtl;
+}
+
+.profile .body .account-details > p {
+    color: var(--Vlll-text-color);
+    text-align: right;
+    font-family: Cairo;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.profile .body .account-details .setting > div {
+    width: 34%;
+    direction: ltr;
+    text-align: end;
+}
+
+.profile .body .account-details .setting .btn {
+    padding: 8px 10px; 
+    height: fit-content;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.profile .body .info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 8px;
+    padding: 16px 20px;
+}
+
+.profile .body .info > :first-child {
+    font-weight: 600;
+}
+
+.profile .body .info > :last-child {
+    font-weight: 500;
+}

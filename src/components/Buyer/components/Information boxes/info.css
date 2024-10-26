@@ -1,0 +1,14 @@
+.info {
+    width: calc(25% - 4px);
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    direction: rtl;
+    border-radius: 8px;
+    background-color: var(--primary-background-color);
+}
+
+.info .tit {
+    font-family: 'Cairo';
+}

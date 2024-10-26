@@ -1,0 +1,172 @@
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 7px;
+    padding: 10px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 400;
+    border: 1px solid transparent;
+    box-sizing: border-box;
+    cursor: pointer;
+    transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+.btn.acceptance {
+    color: white;
+    background-color: var(--primary-button-background-color);
+
+    &:hover {
+        background-color: var(--primary-button-background-color-hover);
+    }
+}
+
+.btn.acceptance-thin {
+    color: var(--primary-button-background-color);
+    background-color: transparent;
+    border-color: var(--primary-button-background-color);
+
+    &:hover {
+        background-color: var(--primary-button-background-color);
+        color: white;
+    }   
+}
+
+.btn.negotiate {
+    border: 1px solid #42B72A;
+    color:#42B72A;
+
+    &:hover {
+        background-color: #42B72A;
+        color: white;
+    }
+}
+
+.btn.review {
+    border: 1px solid #0CB7B7;
+    color: #0CB7B7;
+
+
+    &:hover {
+        background-color: #0CB7B7;
+        color: white;
+    }
+}
+
+.btn.share {
+    background-color: #0CB7B7;
+    color: white;
+
+    &:hover {
+        background-color: #0cb7b7d5;
+    }
+}
+
+.btn.reject {
+    color: #F80000;
+    background: #F800001A;
+    border: none;
+
+    &:hover {
+        background-color: #F80000;
+        color: white;
+    }
+}
+
+.btn.schedule {
+    background-color: transparent;
+    border-color: #0CCACA;
+    border: 1.7px solid;
+    color: #0CCACA;
+
+    &.active , &:hover , &.active svg path , &:hover svg path {
+        fill: #FFF;
+        background-color: #0CCACA;
+        color: #fff;
+      }
+}
+
+.btn.offer {
+    background: #C3CFFF66;
+    color: #2140C9;
+
+    &:hover {
+        background-color: #2140C9;
+        color: #fff;
+    }
+}
+
+
+.btn.chart {
+    width: 100%;
+    padding: 8px;
+    border-radius: 8px;
+    color: #fff;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background: linear-gradient(90deg, #1E3BB9 0%, #0BBBBB 100%);
+}
+
+.btn.buyer {
+    margin-top: 16px;
+    background: var(--secondary-button-background-color)
+}
+
+.btn.seller {
+    margin-top: 16px;
+    background-color: var(--primary-button-background-color);
+
+    &:hover {
+        background-color: var(--primary-button-background-color-hover);
+    }
+}
+
+.btn.admin {
+    background: var(--third-button-background-color);
+}
+
+.btn.login {
+    background-color: var(--primary-button-background-color);
+
+    &:hover {
+        background-color: var(--primary-button-background-color-hover);
+    }
+}   
+
+.btn {
+    &.admin ,
+    &.buyer ,
+    &.seller ,
+    &.login {
+        width: 100%;
+        padding: 3px 8px;
+        color: white;
+    }
+}
+
+.btn.close {
+    color: #F80000;
+    background: #FFEFEF;
+    border-radius: 100%;
+    width: 28px;
+    height: 28px;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn.btn.closed {
+    color: #F80000;
+    background-color: transparent;
+    border: 0.5px solid #C70303;
+}
+
+.btn.btn.closed.active ,
+.btn.closed:hover {
+    background-color: #F80000;
+    color: white;
+}

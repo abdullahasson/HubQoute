@@ -1,0 +1,37 @@
+.rfq-horizontal {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.rfq-horizontal .head {
+    position: sticky;
+    top: 95px;
+    width: 100%;
+    padding: 9px 18px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background: #2140C91A;
+    border: 1px solid #2140C9;
+    border-radius: 8px;
+}
+
+.rfq-horizontal .head span {
+    font-family: Cairo;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 29.98px;
+    letter-spacing: -0.16500000655651093px;
+    text-align: left;
+    color: #2140C9;
+}
+
+.rfq-horizontal .body {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    gap: 40px;
+}
+

@@ -1,0 +1,52 @@
+.active-certificates {
+    direction: ltr;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 8px;
+    border: 1px solid #DDD;
+    background: var(--primary-card-background-color);
+    box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.25);
+    width: 275px;
+}
+
+.active-certificates .heading  p {
+    padding: 12px;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.active-certificates .list > li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 15px;
+}
+
+.active-certificates .list > li > div {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 12px;
+}
+
+.active-certificates .list > li > div svg {
+    color: #2140C9;
+    font-size: 20px;
+}
+
+.active-certificates .list > li > div span {
+    font-family: Cairo;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 29.98px;
+    text-align: left;
+}
+
+.active-certificates .list > li > div p {
+    font-family: Cairo;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 26.24px;
+    text-align: left;
+}

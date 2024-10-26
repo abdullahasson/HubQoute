@@ -1,0 +1,159 @@
+.navbar {
+    position: sticky;
+    top: 84px;
+    height: calc(100vh - 84px);
+    width: 260px;
+    background-color: var(--primary-navbar-background-color);
+    padding-bottom: 10px;
+    overflow: auto;
+    /* transition: all 0.4s ease; */
+    z-index: 22;
+}
+
+.navbar::-webkit-scrollbar {
+    background-color: transparent;
+    width: 2.5px;
+}
+
+.navbar::-webkit-scrollbar-thumb {
+    background-color: #ffffff;
+}
+
+.navbar .head {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row-reverse;
+    border-radius: 0 0 8px 8px;
+}
+
+.navbar .head button {
+    position: relative;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    margin-bottom: 5px;
+    border-radius: 0 5px 5px 0;
+    background-color: var(--secondary-background-color);
+    transition: 0.3s;
+}
+
+.navbar ul {
+    padding: 0;
+    margin: 0;
+}
+
+.navbar ul li a {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    gap: 9px;
+    text-decoration: none;
+    width: 100%;
+    padding: 12px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    cursor: pointer;
+}
+
+.navbar ul li a span {
+    width: max-content;
+    font-weight: 500;
+    font-size: 16px;
+    color: var(--fourth-text-color);
+}
+
+.navbar ul li a .nav-icon {
+    color: var(--fourth-text-color);
+}
+
+.navbar ul li a .chip-pro {
+    background-color: transparent;
+}
+
+.navbar ul li a .css-wjsjww-MuiChip-label {
+    color: var(--secondary-text-color) !important;
+    background: linear-gradient(90deg, #2140C9 1.35%, #0CCACA 142.42%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    font-family: 'Cairo';
+    border-radius: 6px;
+}
+
+.navbar ul li:hover {
+    background-color: var(--navbar-link-bg-hover);
+}
+
+.navbar ul li a.active span ,
+.navbar ul li:hover a span {
+    color: var(--primary-button-background-color);
+}
+
+.navbar ul li a.active .nav-icon ,
+.navbar ul li:hover a .nav-icon {
+    color: var(--primary-button-background-color);
+}
+
+.navbar ul li a.active {
+    background-color: var(--navbar-link-bg-hover);
+}
+
+/* log out */
+
+.navbar ul li.logout a .nav-icon ,
+.navbar ul li.logout a span {
+    color: var(--error-text-color) !important;
+}
+
+.navbar ul li.logout a.active span ,
+.navbar ul li.logout:hover a span {
+    color: var(--error-text-color);
+}
+
+.navbar ul li.logout a.active .nav-icon ,
+.navbar ul li.logout:hover a .nav-icon {
+    color: var(--error-text-color);
+}
+
+
+.navbar ul li.logout:hover ,
+.navbar ul li.logout a.active {
+    background: #FEC9C9;
+}
+
+/* close and open */
+.navbar.close {
+    width: 62px;
+}
+
+.navbar.close .head button {
+    margin-top: 12px;
+    margin-bottom: 12px;
+    border-radius: 50%;
+    width: 34px;
+    height: 34px;
+} 
+
+.navbar.close > ul > li {
+    width: 57px;
+    height: 57px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar.close > ul > li a {
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    gap:0;
+}
+
+.navbar.close ul li a .css-wjsjww-MuiChip-label ,
+.navbar.close > ul > li span ,
+.navbar.close .title {
+    display: none;
+    opacity: 0;
+}

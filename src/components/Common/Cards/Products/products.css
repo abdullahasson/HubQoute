@@ -1,0 +1,85 @@
+.products-card {
+    position: relative;
+    background-color: var(--primary-card-background-color);
+    border-radius: 8px;
+    padding: var(--card-padding);
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    direction: ltr;
+    z-index: 2;
+}
+
+.products-card::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: 18px; 
+    padding: 1px; 
+    background: linear-gradient(to bottom , #0BBBBB  0% , #FFC94B 100%); 
+    -webkit-mask: 
+       linear-gradient(#fff 0 0) content-box, 
+       linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude; 
+    z-index: -1;
+}
+
+.products-card > ul {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.products-card > ul li {
+    width: 100%;
+    padding: 0 0 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
+    border-bottom: 1px solid;
+    border-color: #E9E9E9;
+}
+    
+.products-card > ul li div > img {
+    width: 105px;
+    height: 105px;
+} 
+
+.products-card > ul li div {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.products-card > ul li > div::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: 8px; 
+    padding: 1px; 
+    background: linear-gradient(to bottom , #2140C9 0% , #0BBBBB  100%); 
+    -webkit-mask: 
+       linear-gradient(#fff 0 0) content-box, 
+       linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude; 
+}
+
+.products-card .buttons {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid #2140C9;
+    box-sizing: border-box;
+    padding-bottom: 0;
+    padding-top: 25px;
+    margin-top: 14px;
+}

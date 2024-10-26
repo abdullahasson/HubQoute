@@ -1,0 +1,52 @@
+.Table {
+    width: 100%;
+    direction: ltr;
+    display: flex;
+    flex-direction: column;
+    gap: 13.7px;
+
+}
+
+.Table > div {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #BABABA;
+    border-left: 6px solid #00D54D;
+}
+
+.Table > div:first-child {
+    background-color: #646D97;
+    color: white;
+}
+
+.Table > div span {
+    font-family: 'cairo';
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 33.73px;
+    text-align: left;
+}
+
+.Table > div .status {
+    padding: 0 10px;
+    gap: 10px;
+    border-radius: 8px;
+    font-family: 'cairo';
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 29.98px;
+    text-align: right;
+}
+
+.Table > div .status.released {
+    background: #E0FFEB;
+    color: #00D54D;
+}
+
+.Table > div .status.closed {
+    background: #FEC9C9;
+    color: #EE3E3E;
+}

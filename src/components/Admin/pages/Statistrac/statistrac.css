@@ -1,0 +1,53 @@
+.statistrac-admin {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    gap: 22px;
+    width: 100%;
+    min-height: 100vh;
+    padding: 20px;
+    background-color: var(--secondary-background-color);
+    box-sizing: border-box;
+}
+
+.statistrac-admin-controls {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+}
+
+.statistrac-admin-controls .manage {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.statistrac-admin-controls .manage .buttons {
+    display: flex;
+    gap: 12px;
+}
+
+.statistrac-admin-controls .manage .buttons > button {
+    width: 120px;
+    padding: 3px 12px;
+}
+
+.statistrac-admin .manage p {
+    font-family: Cairo;
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 41.23px;
+    text-align: right;
+    color: var(--primary-heading-color);
+}
+
+/* component 1 */
+.totals {
+    width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: end;
+}

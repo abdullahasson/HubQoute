@@ -1,0 +1,35 @@
+.input .label {
+    margin-bottom: 6px;
+    font-weight: 400;
+    font-size: 14px;
+  }
+  
+  /* .PhoneInput , */
+  .input-container {
+    display: flex; 
+    align-items: center; 
+    gap: 12px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  
+  .input-container svg {
+    color: #546881;
+  }
+  
+  .PhoneInput {
+    width: -webkit-fill-available
+  }
+  
+  .PhoneInputInput ,
+  .input-container input {
+    flex: 1; 
+    border: none; 
+    outline: none; 
+    padding-left: 10px; 
+    font-size: 16px;
+    text-align: right;
+    width: 100%;
+  }

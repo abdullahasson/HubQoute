@@ -1,0 +1,62 @@
+.message {
+    display: flex;
+    justify-content: start;
+    position: relative;
+    width: 100%;
+    direction: ltr;
+}
+    
+.message .consignee {
+    position: relative;
+    left: 12px;
+    top: 5px;
+    box-sizing: border-box;
+    border: 3px solid #ffff;
+}
+        
+.message .message-content {
+    max-width: 90%;
+    padding: 6px;
+    padding-left: 15px;
+    border-radius: 5px;
+    background-color: #F2F4F7;
+}
+
+.message .message-content .consigne-name {
+    font-family: Cairo;
+    font-size: 9.92px;
+    font-weight: 700;
+    line-height: 14.88px;
+    text-align: left;
+}
+
+.message .message-content .time {
+    font-family: Poppins;
+    font-size: 9.21px;
+    font-weight: 400;
+    line-height: 12.76px;
+    text-align: left;
+    color: #B2BBC6;
+}
+
+.message .message-content .message-text {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14.88px;
+    color: #546881;
+}
+
+
+
+/* Me */
+.message.me {
+    direction: rtl;
+}
+
+.message.me .message-content {
+    padding-left: 6px;
+    max-width: 86%;
+    background-color: #E1E7FF;
+}
+
+/* consignee */

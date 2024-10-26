@@ -1,0 +1,18 @@
+.dashboard .main-content {
+    height: 100%;
+    width: 100%;
+    margin-top: 84px;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: flex-start;
+    justify-content: space-between;
+    background-color: #ffffff;
+    background-color: var(--secondary-background-color);
+}
+
+.dashboard .main-content .part {
+    position: relative;
+    width: calc(100% - 212px);
+    min-height: 100vh;
+    background-color: var(--secondary-background-color);
+}

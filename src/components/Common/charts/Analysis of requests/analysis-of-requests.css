@@ -1,0 +1,46 @@
+.css-1tfmlru-MuiResponsiveChart-container {
+    width: 500px !important;
+}
+
+.analysis-of-requests .head {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px;
+    box-sizing: border-box;
+    z-index: 99;
+}
+
+.analysis-of-requests .head .txt h2 { 
+    margin: 0;
+    font-size: 18.07px;
+    font-weight: 700;
+    line-height: 33.85px;
+    color: var(--primary-text-color);
+}
+ 
+.analysis-of-requests .head .txt p {
+    color: #B9BBBD;
+    margin: 0;
+    font-size: 12.04px;
+    font-weight: 400;
+    line-height: 14.45px;
+}
+
+.analysis-of-requests .head button {
+    font-weight: 700;
+    padding: 8px;
+    border: 1px dashed var(--primary-button-background-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 8px;
+    background: transparent;
+    color: var(--primary-button-background-color);
+    border-radius: 8px;
+    cursor: pointer;
+}

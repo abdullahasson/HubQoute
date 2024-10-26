@@ -1,0 +1,79 @@
+.statistrac {
+    width: 100%;
+    min-height: 100vh;
+    padding: 20px;
+    background-color: var(--secondary-background-color);
+    box-sizing: border-box;
+}
+
+.statistrac .charts {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+}
+
+
+/* Charts Start */
+
+.statistrac .charts .chart-box {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    height: 100%;
+    background-color: var(--primary-card-background-color);
+    border-radius: 10px;
+    box-sizing: border-box;
+    padding: 12px;
+    height: 300px;
+    width: 100%
+}
+
+.statistrac .Requests-for-recent-quotations {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+
+.statistrac .Requests-for-recent-quotations .head {
+    width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    gap: 20px;
+    margin: 20px 0;
+}
+
+.statistrac .Requests-for-recent-quotations .head > div {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.statistrac .Requests-for-recent-quotations .head > div .select-container {
+    height: 56px;
+}
+
+.statistrac .Requests-for-recent-quotations .head h2 {
+    font-weight: 600;
+    font-size: 22px;
+    color: #51526C;
+    margin: 0;
+}
+
+.order-summary .group > div:nth-child(1) {
+    background-color: #2385331A;
+}
+
+.order-summary .group > div:nth-child(2) {
+    background-color: #F5FCFF;
+}
+
+.order-summary .group > div:nth-child(3) {
+    background: #2140C933;
+}

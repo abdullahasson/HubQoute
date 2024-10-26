@@ -1,0 +1,54 @@
+.information-box {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    gap: 16px;
+}
+
+.information-box .info-head {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    align-items: center;
+    gap: 20px;
+}
+
+.information-box .info-head .rating {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    gap: 5px;
+}
+
+.information-box .info-head .rating p {
+    font-size: 16px;
+    font-weight: 600;
+    direction: rtl;
+}
+
+.information-box .info-head .rating span {
+    font-size: 14px;
+    font-weight: 500;
+    padding: 4px 8px;
+    background: #FFA8021A;
+    color: #FF9800;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.information-box .info-head .rating span svg {
+    width: 16px;
+    height: 16px;
+}
+
+.information-box .info-content {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: end;
+    align-items: center;
+    gap: 16px;
+    width: 100%;
+}

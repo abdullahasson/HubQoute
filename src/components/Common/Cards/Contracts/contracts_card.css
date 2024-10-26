@@ -1,0 +1,65 @@
+.contracts-card {
+    box-sizing: border-box;
+    background-color: var(--primary-card-background-color);
+}
+
+.contracts-card * {
+    font-family: 'Cairo' !important;
+}
+
+.txt-green {
+    color: #00D54D;
+}
+
+.contracts-card .head {
+    width: 100%;
+    padding: 10px 17px 5px 5px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.contracts-card .head .txt {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 4px;
+}
+
+.contracts-card .body {
+    padding: 0 17px;
+}
+
+.contracts-card .body .info {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
+}
+
+.contracts-card .body .info .txt {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+}
+
+.contracts-card .body .info .chat {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.contracts-card .body .info .chat svg {
+    font-size: 30px;
+    color: #0CCACA;
+}
+
+.contracts-card .foot {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 17px;
+}

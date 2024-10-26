@@ -1,0 +1,135 @@
+.market-place {
+    width: 100%;
+    min-height: 100vh;
+    padding: var(--page-padding);
+    background-color: var(--secondary-background-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: end;
+}
+
+.XZER {
+    font-size: 120px !important;
+    text-align: center;
+}
+
+.market-place #marker-place-head-slider {
+    border-radius: 15px;
+    margin-top: 22px;
+    background-color: transparent;
+    color: white;
+    width: 100%;
+    height: 250px;
+}
+
+.market-place #marker-place-head-slider .swiper-wrapper {
+    width: 0;
+}
+
+.market-place .swiper-slide {
+    border-radius: 15px;
+    overflow: hidden;
+    background-color: #b9b6c4;
+}
+
+.market-place .swiper-slide > img {
+    width: 100%;
+}
+
+.market-place .swiper-pagination-bullet {
+    cursor: pointer;
+    background: white;
+    opacity: 1;
+}
+
+.market-place .swiper-pagination-bullet-active {
+    width: 33px;
+    height: 9px;
+    border-radius: 20px;
+    background: #2140C9;
+}
+
+
+.market-place .swiper-button-prev ,
+.market-place .swiper-button-next {
+    display: none ;
+}
+
+.market-place .current-page {
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--sixth-text-color)
+}
+
+.market-place .previous-page {
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;
+    gap: 4px; 
+    cursor: pointer;
+}
+
+.market-place .main-title {
+    width: 100%;
+    margin-top: 2rem; 
+    display: flex;
+    flex-direction: column;
+    align-items: end; 
+    justify-content: space-between;
+}
+
+.market-place .main-title .title-row {
+    width: 100%; 
+    margin-bottom: 2rem;
+    justify-content: end;
+    align-items: center; 
+    flex-direction: row-reverse; 
+    gap: 2rem; 
+}
+
+.market-place .main-title .title-row .heading {
+    width: fit-content; 
+    padding-bottom: 10px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    border-bottom: 1px solid #2140C9;
+    font-size: 24px;
+    font-weight: 600; 
+    font-family: 'Cairo';
+    color: #2140C9; 
+}
+
+.market-place .main-title .title-row .select-container {
+    height: 50px;
+}
+
+.market-place .main-title .title-row .select-container label {
+    left: 18px;
+} 
+
+.market-place .market-place-content {
+    width: 100%;
+    margin-top: 30px;
+}
+
+.market-place .filters {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    gap: 14px;
+}
+
+.market-place .filters > h3 {
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 44.98px;
+    letter-spacing: -0.1px;
+}
+
+.market-place .market-place-content .filtering-result > p {
+    text-align: end;
+    margin-bottom: 22px;
+}

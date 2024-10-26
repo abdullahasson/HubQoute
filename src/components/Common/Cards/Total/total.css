@@ -1,0 +1,41 @@
+.total {
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    justify-content: end;
+    background: var(--primary-card-background-color);
+    width: calc(100% / 4 - 12px);
+    padding: 10px;
+    border-radius: 8px;
+    gap: 10px;
+}
+
+.total .total-icon-border {
+    width: 64px;
+    height: 64px; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 16px;
+    border: 1px solid;
+}
+
+.total .txt {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+
+.total .txt p {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 21px;
+    color: var(--fourth-text-color);
+}
+
+.total .txt h3 {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    color: var(--Vlll-text-color);
+}

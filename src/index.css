@@ -1,0 +1,230 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap'); */
+
+:root{
+  
+  line-height: 1.5;
+  font-size: 17px;
+  font-weight: 400;
+  
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+  
+  /* padding */
+  --page-padding: 1.25rem;
+  --card-padding: 0.75rem;
+
+  /* radius */
+  --card-radius: 1rem;
+
+  /* color */
+  /* BG */
+  --primary-background-color: #ffff;
+  --secondary-background-color: #ebeef3;
+
+  /* home page */
+  --primary-home-background-color: #212121;
+
+  /* Seller Profile */
+  --primary-profile-background-color: #fff;
+
+  /* Header */
+  --primary-header-background-color: #F9FAFB;
+
+  /* Navbar */
+  --primary-navbar-background-color: #fff;
+
+  /* Support */
+  --primary-support-background-color: #F9FAFB;
+
+  /* Cards */
+  --primary-card-background-color: #fff;
+
+  /* Inputs */
+  --primary-input-background-color: #fff;
+
+  /* Categories */
+  --primary-categories-color: #F1FFFF;
+  --scondary-categories-color: #F1F4FF;
+
+
+  /* Heading text */
+  --primary-heading-color: #51526C;
+
+  /* Text */
+  --primary-text-color:#182D3F;
+  --secondary-text-color:#ffff;
+  --third-text-color: #3584FA;
+  --fourth-text-color: #546881;
+  --sixth-text-color:#2140C9;
+  --seventh-text-color: #1D242D;
+  --Vlll-text-color: #000000;
+  --error-text-color: #EA1212;
+  
+  /* placeholders */
+  --text-placeholder-color: #757575;
+
+
+  /* boredr color */
+  
+
+  /* Button */
+  --primary-button-background-color: #2140C9;
+  --primary-button-background-color-hover:#2848d6d2;
+  --secondary-button-background-color: #0AA6A6;
+  --third-button-background-color: #366DB2;
+  --primary-button-text-color: #fff;
+
+
+  /* shadows */
+  --sign-in-up-box-shadow:#00000029;
+
+  /* navbar */
+  --navbar-link-bg-hover: #D1E0FF;
+}
+  
+
+/* color for dark theme */
+[data-theme="dark"] {
+  /* color */
+  color: white;
+  /* BG */
+  --primary-background-color: #1A1D23;
+  --secondary-background-color: #2F343A;
+
+  /* home page */
+  --primary-home-background-color: #212121;
+
+  /* Seller Profile */
+  --primary-profile-background-color: #2C2F33;
+
+  /* Header */
+  --primary-header-background-color: #262626;
+
+  /* Navbar */
+  --primary-navbar-background-color: #2C2F33;
+
+  /* Support */
+  --primary-support-background-color: #2c2b2b;
+
+  /* Cards */
+  --primary-card-background-color: #272b30;
+
+  /* Inputs */
+  --primary-input-background-color: #272b30;
+
+  /* Categories */
+  --primary-categories-color: #d5fdfd;
+  --scondary-categories-color: #d1dafc;
+
+  /* Heading Text */
+  --primary-heading-color: #C7C5B8;
+
+  /* Text */
+  --primary-text-color: #FFFFFF;
+  --secondary-text-color: #B1B1B1;
+  --third-text-color: #66D9EF;
+  --fourth-text-color: #8B9467;
+  --sixth-text-color: #7e8cc0;
+  --seventh-text-color: #5C5F66;
+  --Vlll-text-color: #FFFFFF;
+  --error-text-color: #FF3737;
+
+  /* #818487 */
+
+
+  /* placeholders */
+  --text-placeholder-color: #666666;
+
+  /* Button */
+  --primary-button-background-color: #4F69C6;
+  --primary-button-background-color-hover: #5F7CD8;
+  --secondary-button-background-color: #2E865F;
+  --third-button-background-color: #2F4F7F;
+  --primary-button-text-color: #FFFFFF;
+
+  /* shadows */
+  --sign-in-up-box-shadow: #d8d8d899;
+
+  /* navbar */
+  --navbar-link-bg-hover: #2d384e;
+}
+  
+
+* {
+  font-family: 'Cairo', sans-serif;
+  box-sizing: border-box;
+}
+
+#root , body , html {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+/* Small */
+@media (min-width: 768px) {
+   .container {
+      width: 750px;
+    }
+}
+/* Medium */
+@media (min-width: 992px) {
+    .container {
+      width: 970px;
+    }
+}
+/* Large */
+@media (min-width: 1200px) {
+    .container {
+      width: 1170px;
+    }
+}
+
+ul {
+  list-style-type: none;
+}
+
+::-webkit-scrollbar {
+  width: 1px;
+}
+
+::-webkit-scrollbar-track {
+  background: #c7c7c7d2;
+  border-radius: 12px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: hsla(180, 85%, 37%, 0.961);
+  border-radius: 12px;
+}
+
+.css-ahj2mt-MuiTypography-root {
+  font-family: 'cairo' !important;
+}
+
+.image-border {
+  position: relative;    
+}
+
+.image-border::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 100%;
+  padding: 1.5px;
+  background: linear-gradient(to bottom, #2140C9 0%, #0BBBBB 100%);
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+}
+/* End Global Rules */
