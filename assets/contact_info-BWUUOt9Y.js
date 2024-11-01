@@ -1,1 +1,0 @@
-import{j as s,B as t,C as o,F as n,bw as r,bx as x}from"./index-D6gix3xw.js";const j=({phone:a,email:e,theme:c})=>s.jsxs(t,{className:`contact-info ${c}`,children:[s.jsxs(o,{children:[s.jsx(n,{icon:r}),a]}),s.jsxs(o,{children:[s.jsx(n,{icon:x}),e]})]});export{j as C};
