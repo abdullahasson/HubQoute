@@ -19,7 +19,7 @@ const App = () => {
 
   const { theme , setTheme } = useContext(appContext)
 
-  const userSystemTheme = useMediaQuery('(prefers-color-scheme: dark)') ? 'dark' : 'light'
+  const userSystemTheme = useMediaQuery('(prefers-color-scheme: dark)') ? 'light' : 'light'
   useEffect(() => {
     const mode = window.localStorage.getItem('theme')
     mode ? 

@@ -1,5 +1,5 @@
 // react
-import { useContext } from 'react';
+import { useContext , useState } from 'react';
 import { useForm , FormProvider } from 'react-hook-form'
 // context
 import { buyerContext } from '../../../../context/BuyerContext';
@@ -7,6 +7,9 @@ import { buyerContext } from '../../../../context/BuyerContext';
 import Page from '../../../../layouts/Pages/page';
 // mui
 import { MenuItem , Stack } from '@mui/material';
+// Ant Design
+// import { Upload } from 'antd';
+// import ImgCrop from 'antd-img-crop';
 // components
 import AutocompleteBox from "../../components/Inputs/Autocomplete/autocomplete_box"
 import TextField from '../../components/Inputs/Textfield/TextField';
@@ -17,6 +20,16 @@ import Select from '../../../Common/Inputs/Select/select';
 // icon
 import { faComments } from "@fortawesome/fontawesome-free-regular"
 import { faSquarePlus } from "@fortawesome/free-solid-svg-icons"
+
+import { PlusOutlined } from '@ant-design/icons';
+import { Image, Upload } from 'antd';
+const getBase64 = (file) =>
+  new Promise((resolve, reject) => {
+    const reader = new FileReader();
+    reader.readAsDataURL(file);
+    reader.onload = () => resolve(reader.result);
+    reader.onerror = (error) => reject(error);
+  });
 
 
 const PurchaseOrder = () => {
@@ -33,6 +46,39 @@ const PurchaseOrder = () => {
     setConfirmationDialog(true)
     console.log(data)
   }
+
+
+  const [previewOpen, setPreviewOpen] = useState(false);
+  const [previewImage, setPreviewImage] = useState('');
+  const [fileList, setFileList] = useState([]);
+
+
+  const handlePreview = async (file) => {
+    if (!file.url && !file.preview) {
+      file.preview = await getBase64(file.originFileObj);
+    }
+    setPreviewImage(file.url || file.preview);
+    setPreviewOpen(true);
+  };
+  const handleChange = ({ fileList: newFileList }) => setFileList(newFileList);
+  const uploadButton = (
+    <button
+      style={{
+        border: 0,
+        background: 'none',
+      }}
+      type="button"
+    >
+      <PlusOutlined />
+      <div
+        style={{
+          marginTop: 8,
+        }}
+      >
+        Upload
+      </div>
+    </button>
+  );
 
   return (  
     <Page 
@@ -123,6 +169,45 @@ const PurchaseOrder = () => {
             <DropBox 
               name='images'
             />
+
+            {/* <Upload
+              action='http://localhost:5173/HubQoute/'
+              listType='picture-card'
+              showUploadList={{showRemoveIcon: true , showDownloadIcon: true}}
+              accept='.jpg'
+              multiple
+              fileList=''
+            >
+              <p>Upload +</p>
+            </Upload> */}
+
+            {/* <Upload.Dragger
+                action="http://localhost:5173/HubQoute/"
+                listType="picture-card"
+                fileList={fileList}
+                onPreview={handlePreview}
+                onChange={handleChange}
+                accept='.jpg'
+                multiple
+                style={{width: '560px' , background: '#fff' , marginLeft: 'auto' , marginBottom: '24px'}}
+              >
+                {fileList.length >= 8 ? null : uploadButton}
+              </Upload.Dragger>
+
+              {previewImage && (
+                <Image
+                  wrapperStyle={{
+                    display: 'none',
+                  }}
+                  preview={{
+                    visible: previewOpen,
+                    onVisibleChange: (visible) => setPreviewOpen(visible),
+                    afterOpenChange: (visible) => !visible && setPreviewImage(''),
+                  }}
+                  src={previewImage}
+                />
+              )} */}
+
 
             <Button 
               style={{width: '45%' , margin: 'auto'}} 

@@ -30,5 +30,4 @@ export const AppContext = ({ children }) => {
             {children}
         </appContext.Provider>
     )
-
 }
