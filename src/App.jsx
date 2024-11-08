@@ -18,7 +18,6 @@ import './styles/App.css'
 const App = () => {
 
   const { theme , setTheme } = useContext(appContext)
-
   const userSystemTheme = useMediaQuery('(prefers-color-scheme: dark)') ? 'light' : 'light'
   useEffect(() => {
     const mode = window.localStorage.getItem('theme')
@@ -32,7 +31,7 @@ const App = () => {
   
   const Theme = createTheme({
     palette: {
-      mode: theme == 'dark' ? 'dark' : 'light',
+      mode: 'light',
       direction: 'rtl',
       success: {
         main: '#12A60F',
@@ -63,7 +62,7 @@ const App = () => {
 
   return (
     <ThemeProvider theme={Theme}>
-        <div data-theme={theme} id="app">  
+        <div data-theme='light' id="app">  
           <RouterProvider router={router} />
         </div>  
     </ThemeProvider>
